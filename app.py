@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import io
+import os
 
 # ✅ Class label map (based on your 13-class PlantVillage model)
 label_map = {
@@ -90,4 +91,6 @@ def predict():
 
 # 🚀 Start Flask Server
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+
