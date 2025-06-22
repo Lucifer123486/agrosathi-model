@@ -7,7 +7,8 @@ WORKDIR /app
 # Copy everything into the container
 COPY . .
 
-COPY model.tflite .  # make sure your .tflite file is copied#
+COPY model.tflite .  
+# make sure your .tflite file is copied#
 
 
 # Install dependencies
