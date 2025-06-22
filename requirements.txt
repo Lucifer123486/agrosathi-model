@@ -1,4 +1,9 @@
 flask
+<<<<<<< HEAD
 tflite-runtime
+=======
+gunicorn
+tensorflow==2.10.1  # or the version used in your local model
+>>>>>>> afb618e (🚑 Fix: Make app.py and Dockerfile compatible with Cloud Run)
 pillow
 numpy
