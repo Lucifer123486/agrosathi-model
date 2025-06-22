@@ -9,6 +9,7 @@ COPY . .
 
 COPY model.tflite .  
 # make sure your .tflite file is copied#
+# make sure your .tflite file is copied
 
 
 # Install dependencies
